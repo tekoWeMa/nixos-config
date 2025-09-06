@@ -117,6 +117,7 @@
     nano
     vscode
     git
+    fastfetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
