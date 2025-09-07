@@ -65,6 +65,10 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Add qemuguest agent and spice vdagent for Proxmox
+  services.qemuGuest.enable = true;
+  services.spice-vdagentd.enable = true;
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -117,6 +121,7 @@
     vscode
     git
     fastfetch
+    spice-vdagent
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
